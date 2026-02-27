@@ -2,13 +2,8 @@
 name: 'step-06-offer'
 description: 'Build the complete value stack with offer structure, bonuses, price anchoring, and guarantee'
 
-# Path Definitions
-workflow_path: '{project-root}/_bmad/mmad/workflows/vsl-structure'
-
 # File References
-thisStepFile: './step-06-offer.md'
 nextStepFile: './step-07-close.md'
-workflowFile: '{workflow_path}/workflow.md'
 outputFile: '{content_assets}/vsl-{vsl_name}-{project_name}.md'
 
 # Task References

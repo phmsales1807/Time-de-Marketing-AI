@@ -2,13 +2,8 @@
 name: 'step-03-generate'
 description: 'Execute Speed Protocol batch generation of 20-40 ad copy variations across all briefs and frameworks'
 
-# Path Definitions
-workflow_path: '{project-root}/_bmad/mmad/workflows/ad-batch-generator'
-
 # File References
-thisStepFile: './step-03-generate.md'
 nextStepFile: './step-04-review-export.md'
-workflowFile: '{workflow_path}/workflow.md'
 outputFile: '{campaign_assets}/ad-batch-{date}-{project_name}.md'
 
 # Task References

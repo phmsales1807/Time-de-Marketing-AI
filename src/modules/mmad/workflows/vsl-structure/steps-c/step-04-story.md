@@ -2,13 +2,8 @@
 name: 'step-04-story'
 description: 'Discover the narrative arc and build the credibility proof stack for the VSL'
 
-# Path Definitions
-workflow_path: '{project-root}/_bmad/mmad/workflows/vsl-structure'
-
 # File References
-thisStepFile: './step-04-story.md'
 nextStepFile: './step-05-solution.md'
-workflowFile: '{workflow_path}/workflow.md'
 outputFile: '{content_assets}/vsl-{vsl_name}-{project_name}.md'
 
 # Task References

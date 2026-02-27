@@ -2,12 +2,7 @@
 name: 'step-07-close'
 description: 'Craft the closing sequence with urgency, final objection handling, CTA, and complete the VSL workflow'
 
-# Path Definitions
-workflow_path: '{project-root}/_bmad/mmad/workflows/vsl-structure'
-
 # File References
-thisStepFile: './step-07-close.md'
-workflowFile: '{workflow_path}/workflow.md'
 outputFile: '{content_assets}/vsl-{vsl_name}-{project_name}.md'
 sidecarMemories: '{project-root}/_bmad/mmad/agents/vtsd-specialist/vtsd-specialist-sidecar/memories.md'
 
@@ -233,26 +228,16 @@ This is the final step of the VSL Structure workflow. When the user selects 'D' 
 
 ### ✅ SUCCESS:
 
-- Urgency element is authentic and defensible (not fabricated scarcity)
-- Final objection identified and addressed
-- CTA is clear, specific, and friction-free
-- Post-CTA reassurance provided
-- Close section saved to output document
-- Sidecar memories updated with VSL session summary
-- Complete VSL coherence check performed
-- Frontmatter marked as COMPLETE
-- Downstream agent recommendations communicated clearly
-- User satisfied with final VSL structure
+- Urgency element is authentic and defensible; final objection identified and addressed
+- CTA is clear, specific, and friction-free; post-CTA reassurance provided
+- Close section saved to output document; sidecar memories updated
+- Complete VSL coherence check performed; frontmatter marked as COMPLETE
+- Downstream agent recommendations communicated; user satisfied with final structure
 
 ### ❌ SYSTEM FAILURE:
 
-- Generating close content without user input
-- Using fabricated urgency or false scarcity
-- Asking more than 2 questions per turn
-- Not performing coherence check across all sections
-- Not updating sidecar memories
-- Not marking workflow as COMPLETE in frontmatter
-- Not saving final document state
-- Changing previous sections without user consent
+- Generating close content without user input or using fabricated urgency
+- Not performing coherence check, not updating sidecar memories, or not marking COMPLETE
+- Not saving final document state; changing previous sections without user consent
 
 **Master Rule:** Skipping steps, optimizing sequences, or not following exact instructions is FORBIDDEN and constitutes SYSTEM FAILURE.

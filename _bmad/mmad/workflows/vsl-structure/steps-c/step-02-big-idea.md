@@ -2,13 +2,8 @@
 name: 'step-02-big-idea'
 description: 'Discover the ONE Big Idea that drives the entire VSL and craft compelling hook options'
 
-# Path Definitions
-workflow_path: '{project-root}/_bmad/mmad/workflows/vsl-structure'
-
 # File References
-thisStepFile: './step-02-big-idea.md'
 nextStepFile: './step-03-problem.md'
-workflowFile: '{workflow_path}/workflow.md'
 outputFile: '{content_assets}/vsl-{vsl_name}-{project_name}.md'
 
 # Task References

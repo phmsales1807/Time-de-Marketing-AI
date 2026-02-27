@@ -2,13 +2,8 @@
 name: 'step-02-brand-brief'
 description: 'Validate and present Brand Brief context for this specific Mandala campaign'
 
-# Path Definitions
-workflow_path: '{project-root}/_bmad/mmad/workflows/mandala-builder'
-
 # File References
-thisStepFile: './step-02-brand-brief.md'
 nextStepFile: './step-03-funnel-phases.md'
-workflowFile: '{workflow_path}/workflow.md'
 outputFile: '{campaign_assets}/mandala-{project_name}.md'
 
 # Task References

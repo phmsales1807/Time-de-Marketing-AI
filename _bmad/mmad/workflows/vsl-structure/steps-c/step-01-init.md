@@ -2,15 +2,10 @@
 name: 'step-01-init'
 description: 'Initialize the VSL Structure workflow by loading Brand Brief, asking for VSL name, and creating output document'
 
-# Path Definitions
-workflow_path: '{project-root}/_bmad/mmad/workflows/vsl-structure'
-
 # File References
-thisStepFile: './step-01-init.md'
 nextStepFile: './step-02-big-idea.md'
-workflowFile: '{workflow_path}/workflow.md'
 outputFile: '{content_assets}/vsl-{vsl_name}-{project_name}.md'
-templateFile: '{workflow_path}/templates/vsl-output-template.md'
+templateFile: '../templates/vsl-output-template.md'
 brandBriefFile: '{brand_assets}/brand-brief-{project_name}.md'
 sidecarMemories: '{project-root}/_bmad/mmad/agents/vtsd-specialist/vtsd-specialist-sidecar/memories.md'
 ---
@@ -70,7 +65,7 @@ To initialize the VSL Structure workflow by loading the Brand Brief (required), 
 
 Load the Brand Brief — this is mandatory for VSL creation:
 
-- Look for file at `{brand_assets}/brand-brief-{project_name}.md`
+- Look for file at `{brandBriefFile}`
 - If found: Read and extract key context:
   - **ICP:** Ideal Customer Profile (demographics, psychographics, pains, desires)
   - **Positioning:** Unique positioning and differentiators
@@ -78,7 +73,7 @@ Load the Brand Brief — this is mandatory for VSL creation:
   - **Market Context:** Problem, market, awareness level, competitive landscape
 - Store these as context for the workflow — they will inform every VSL section
 - If NOT found: **STOP** and display error:
-  "🛑 Brand Brief not found at `{brand_assets}/brand-brief-{project_name}.md`. The Brand Brief is REQUIRED for VSL creation — it provides ICP, positioning, and offer context that the entire VSL is built upon. Please complete the Brand Brief first with the Brand Strategist agent before starting the VSL workflow."
+  "🛑 Brand Brief not found at `{brandBriefFile}`. The Brand Brief is REQUIRED for VSL creation — it provides ICP, positioning, and offer context that the entire VSL is built upon. Please complete the Brand Brief first with the Brand Strategist agent before starting the VSL workflow."
   - Do NOT proceed without the Brand Brief
 
 ### 2. Ask for VSL Name

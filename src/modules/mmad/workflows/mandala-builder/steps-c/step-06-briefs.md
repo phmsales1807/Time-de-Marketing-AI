@@ -2,13 +2,8 @@
 name: 'step-06-briefs'
 description: 'Generate production briefs for each prioritized cell in the Mandala matrix'
 
-# Path Definitions
-workflow_path: '{project-root}/_bmad/mmad/workflows/mandala-builder'
-
 # File References
-thisStepFile: './step-06-briefs.md'
 nextStepFile: './step-07-consolidation.md'
-workflowFile: '{workflow_path}/workflow.md'
 outputFile: '{campaign_assets}/mandala-{project_name}.md'
 
 # Task References

@@ -2,13 +2,8 @@
 name: 'step-02-frameworks'
 description: 'Select and assign copy frameworks per angle/brief for batch ad generation'
 
-# Path Definitions
-workflow_path: '{project-root}/_bmad/mmad/workflows/ad-batch-generator'
-
 # File References
-thisStepFile: './step-02-frameworks.md'
 nextStepFile: './step-03-generate.md'
-workflowFile: '{workflow_path}/workflow.md'
 outputFile: '{campaign_assets}/ad-batch-{date}-{project_name}.md'
 
 # Task References

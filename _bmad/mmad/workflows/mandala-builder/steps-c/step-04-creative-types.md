@@ -2,13 +2,8 @@
 name: 'step-04-creative-types'
 description: 'Select creative types from the 10 options for this Mandala campaign'
 
-# Path Definitions
-workflow_path: '{project-root}/_bmad/mmad/workflows/mandala-builder'
-
 # File References
-thisStepFile: './step-04-creative-types.md'
 nextStepFile: './step-05-matrix.md'
-workflowFile: '{workflow_path}/workflow.md'
 outputFile: '{campaign_assets}/mandala-{project_name}.md'
 
 # Task References

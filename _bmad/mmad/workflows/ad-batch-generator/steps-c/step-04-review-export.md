@@ -2,12 +2,7 @@
 name: 'step-04-review-export'
 description: 'Review all approved ad variations, group by platform and campaign phase, update sidecar memories, and finalize export'
 
-# Path Definitions
-workflow_path: '{project-root}/_bmad/mmad/workflows/ad-batch-generator'
-
 # File References
-thisStepFile: './step-04-review-export.md'
-workflowFile: '{workflow_path}/workflow.md'
 outputFile: '{campaign_assets}/ad-batch-{date}-{project_name}.md'
 sidecarMemories: '{project-root}/_bmad/mmad/agents/vtsd-specialist/vtsd-specialist-sidecar/memories.md'
 
@@ -173,7 +168,7 @@ completedDate: [current date]
 
 "**Ad batch complete for {project_name}.**
 
-**Document saved to:** `{campaign_assets}/ad-batch-{date}-{project_name}.md`
+**Document saved to:** `{outputFile}`
 
 **Results:**
 - [X] ad variations ready for deployment

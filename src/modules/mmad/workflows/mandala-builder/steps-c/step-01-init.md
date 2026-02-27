@@ -2,16 +2,11 @@
 name: 'step-01-init'
 description: 'Initialize the Mandala Builder workflow by detecting continuation state, loading Brand Brief, sidecar memories, and mandala-matrix data'
 
-# Path Definitions
-workflow_path: '{project-root}/_bmad/mmad/workflows/mandala-builder'
-
 # File References
-thisStepFile: './step-01-init.md'
 nextStepFile: './step-02-brand-brief.md'
 continueFile: './step-01b-continue.md'
-workflowFile: '{workflow_path}/workflow.md'
 outputFile: '{campaign_assets}/mandala-{project_name}.md'
-templateFile: '{workflow_path}/templates/mandala-output-template.md'
+templateFile: '../templates/mandala-output-template.md'
 
 # Input Documents
 brandBriefFile: '{brand_assets}/brand-brief-{project_name}.md'
@@ -70,7 +65,7 @@ To initialize the Mandala Builder workflow by detecting continuation state, load
 
 First, check if the output document already exists:
 
-- Look for file at `{campaign_assets}/mandala-{project_name}.md`
+- Look for file at `{outputFile}`
 - If exists, read the complete file including frontmatter
 - If not exists, this is a fresh workflow
 
@@ -78,7 +73,7 @@ First, check if the output document already exists:
 
 If the document exists and has frontmatter with `stepsCompleted` array that is NOT empty:
 
-- **STOP here** and load `./step-01b-continue.md` immediately
+- **STOP here** and load `{continueFile}` immediately
 - Do not proceed with any initialization tasks
 - Let step-01b handle the continuation logic
 
@@ -90,11 +85,11 @@ If the document exists AND `status` is `COMPLETE` in frontmatter:
   1. Create a new Mandala (will rename the existing one)
   2. Update/modify the existing Mandala"
 - If option 1: Rename existing file with timestamp suffix, then proceed to step 4
-- If option 2: Load step-01b-continue.md
+- If option 2: Load {continueFile}
 
 ### 4. Load Brand Brief (REQUIRED)
 
-Load the Brand Brief from `{brand_assets}/brand-brief-{project_name}.md`:
+Load the Brand Brief from `{brandBriefFile}`:
 
 - If found: Read and extract key context:
   - **ICP:** Ideal Customer Profile (demographics, psychographics, pains, desires, objections, purchase triggers)
@@ -104,7 +99,7 @@ Load the Brand Brief from `{brand_assets}/brand-brief-{project_name}.md`:
   - **Market Context:** Problem, market, awareness level, competitive landscape
 - Store these as context for the workflow
 - If NOT found: **STOP** and display:
-  "🛑 Brand Brief not found at `{brand_assets}/brand-brief-{project_name}.md`. The Mandala Builder REQUIRES a completed Brand Brief — it is the foundation for all creative decisions. Please complete the Brand Brief first using the Brand Strategist agent, then return here."
+  "🛑 Brand Brief not found at `{brandBriefFile}`. The Mandala Builder REQUIRES a completed Brand Brief — it is the foundation for all creative decisions. Please complete the Brand Brief first using the Brand Strategist agent, then return here."
   - Do NOT proceed. End the workflow initialization.
 
 ### 5. Load Mandala Matrix Data
@@ -131,7 +126,7 @@ If no document exists or user chose to create new:
 
 #### A. Create Initial Document
 
-Copy the template from `{templateFile}` to `{campaign_assets}/mandala-{project_name}.md`
+Copy the template from `{templateFile}` to `{outputFile}`
 
 Replace `{{project_name}}` in the template with the actual project name.
 
@@ -195,7 +190,7 @@ ONLY WHEN initialization setup is complete and document is created (OR continuat
 - Sidecar memories checked for previous Mandala history
 - User welcomed to the process with step overview
 - Ready to proceed to step 2
-- OR existing workflow properly routed to step-01b-continue.md
+- OR existing workflow properly routed to {continueFile}
 
 ### ❌ SYSTEM FAILURE:
 
@@ -205,6 +200,6 @@ ONLY WHEN initialization setup is complete and document is created (OR continuat
 - Proceeding without Brand Brief (REQUIRED dependency)
 - Not loading mandala-matrix data
 - Skipping welcome message
-- Not routing to step-01b-continue.md when appropriate
+- Not routing to {continueFile} when appropriate
 
 **Master Rule:** Skipping steps, optimizing sequences, or not following exact instructions is FORBIDDEN and constitutes SYSTEM FAILURE.

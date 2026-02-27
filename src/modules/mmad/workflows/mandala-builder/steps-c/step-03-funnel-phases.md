@@ -2,13 +2,8 @@
 name: 'step-03-funnel-phases'
 description: 'Map and select Schwartz awareness levels for this specific campaign'
 
-# Path Definitions
-workflow_path: '{project-root}/_bmad/mmad/workflows/mandala-builder'
-
 # File References
-thisStepFile: './step-03-funnel-phases.md'
 nextStepFile: './step-04-creative-types.md'
-workflowFile: '{workflow_path}/workflow.md'
 outputFile: '{campaign_assets}/mandala-{project_name}.md'
 
 # Task References

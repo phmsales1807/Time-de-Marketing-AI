@@ -2,13 +2,8 @@
 name: 'step-05-matrix'
 description: 'Cross awareness levels with creative types into a prioritized matrix'
 
-# Path Definitions
-workflow_path: '{project-root}/_bmad/mmad/workflows/mandala-builder'
-
 # File References
-thisStepFile: './step-05-matrix.md'
 nextStepFile: './step-06-briefs.md'
-workflowFile: '{workflow_path}/workflow.md'
 outputFile: '{campaign_assets}/mandala-{project_name}.md'
 
 # Task References

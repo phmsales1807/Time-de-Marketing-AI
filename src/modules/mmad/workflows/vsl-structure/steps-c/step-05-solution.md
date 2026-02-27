@@ -2,13 +2,8 @@
 name: 'step-05-solution'
 description: 'Define the Unique Mechanism that makes the solution work and differentiate it from everything else'
 
-# Path Definitions
-workflow_path: '{project-root}/_bmad/mmad/workflows/vsl-structure'
-
 # File References
-thisStepFile: './step-05-solution.md'
 nextStepFile: './step-06-offer.md'
-workflowFile: '{workflow_path}/workflow.md'
 outputFile: '{content_assets}/vsl-{vsl_name}-{project_name}.md'
 
 # Task References

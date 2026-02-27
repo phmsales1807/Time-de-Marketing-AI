@@ -2,12 +2,7 @@
 name: 'step-07-consolidation'
 description: 'Compile final Mandala document, extract batch briefs, update sidecar memories, and mark workflow complete'
 
-# Path Definitions
-workflow_path: '{project-root}/_bmad/mmad/workflows/mandala-builder'
-
 # File References
-thisStepFile: './step-07-consolidation.md'
-workflowFile: '{workflow_path}/workflow.md'
 outputFile: '{campaign_assets}/mandala-{project_name}.md'
 batchBriefsFile: '{campaign_assets}/batch-briefs-{project_name}.md'
 sidecarMemories: '{project-root}/_bmad/mmad/agents/vtsd-specialist/vtsd-specialist-sidecar/memories.md'
@@ -138,14 +133,14 @@ This section should contain in {document_output_language}:
 
 ### 6. Extract Batch Briefs
 
-Create a separate batch briefs file at `{campaign_assets}/batch-briefs-{project_name}.md`:
+Create a separate batch briefs file at `{batchBriefsFile}`:
 
 This file should contain:
 
 ```markdown
 ---
 project_name: {project_name}
-source_mandala: '{campaign_assets}/mandala-{project_name}.md'
+source_mandala: '{outputFile}'
 total_briefs: [N]
 date: [current date]
 status: 'READY_FOR_PRODUCTION'
@@ -164,7 +159,7 @@ status: 'READY_FOR_PRODUCTION'
 [All ★★ briefs extracted from section 5, numbered sequentially]
 ```
 
-Inform user: "Batch briefs extracted to `{campaign_assets}/batch-briefs-{project_name}.md` — ready for production handoff to Ad Batch Generator or creative team."
+Inform user: "Batch briefs extracted to `{batchBriefsFile}` — ready for production handoff to Ad Batch Generator or creative team."
 
 ### 7. Update Sidecar Memories
 
@@ -197,8 +192,8 @@ completedDate: [current date]
 "**Mandala da Criatividade Infinita complete for {project_name}.**
 
 **Documents saved:**
-- Mandala document: `{campaign_assets}/mandala-{project_name}.md`
-- Batch briefs: `{campaign_assets}/batch-briefs-{project_name}.md`
+- Mandala document: `{outputFile}`
+- Batch briefs: `{batchBriefsFile}`
 
 **What this enables:**
 - Ad Batch Generator — use batch briefs to produce final ad variations at scale

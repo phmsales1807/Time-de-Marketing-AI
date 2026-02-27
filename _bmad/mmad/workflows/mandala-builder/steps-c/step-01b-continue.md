@@ -2,11 +2,7 @@
 name: 'step-01b-continue'
 description: 'Handle continuation of an in-progress Mandala Builder workflow'
 
-# Path Definitions
-workflow_path: '{project-root}/_bmad/mmad/workflows/mandala-builder'
-
 # File References
-thisStepFile: './step-01b-continue.md'
 outputFile: '{campaign_assets}/mandala-{project_name}.md'
 ---
 

@@ -2,13 +2,8 @@
 name: 'step-03-problem'
 description: 'Deepen the audience pain and craft an agitation sequence with escalating urgency'
 
-# Path Definitions
-workflow_path: '{project-root}/_bmad/mmad/workflows/vsl-structure'
-
 # File References
-thisStepFile: './step-03-problem.md'
 nextStepFile: './step-04-story.md'
-workflowFile: '{workflow_path}/workflow.md'
 outputFile: '{content_assets}/vsl-{vsl_name}-{project_name}.md'
 
 # Task References

@@ -2,15 +2,10 @@
 name: 'step-01-init'
 description: 'Initialize the Ad Batch Generator workflow by loading Mandala briefs, Brand Brief tone, and creating output document'
 
-# Path Definitions
-workflow_path: '{project-root}/_bmad/mmad/workflows/ad-batch-generator'
-
 # File References
-thisStepFile: './step-01-init.md'
 nextStepFile: './step-02-frameworks.md'
-workflowFile: '{workflow_path}/workflow.md'
 outputFile: '{campaign_assets}/ad-batch-{date}-{project_name}.md'
-templateFile: '{workflow_path}/templates/ad-batch-output-template.md'
+templateFile: '../templates/ad-batch-output-template.md'
 brandBriefFile: '{brand_assets}/brand-brief-{project_name}.md'
 batchBriefsFile: '{campaign_assets}/batch-briefs-{project_name}.md'
 mandalaFile: '{campaign_assets}/mandala-{project_name}.md'
@@ -66,8 +61,8 @@ To initialize the Ad Batch Generator workflow by loading Mandala production brie
 
 Search for production briefs in this order:
 
-1. Look for `{campaign_assets}/batch-briefs-{project_name}.md`
-2. If not found, try `{campaign_assets}/mandala-{project_name}.md`
+1. Look for `{batchBriefsFile}`
+2. If not found, try `{mandalaFile}`
 3. If NEITHER found: **STOP** and tell user: "No production briefs found. Please run the Mandala Builder workflow first to generate production briefs, then return to Ad Batch Generator."
 
 If found: Read the complete file and extract all production briefs (angles, awareness levels, creative types, key messages).
@@ -92,7 +87,7 @@ This is a SINGLE-SESSION workflow — always fresh, no continuation detection.
 
 #### A. Create Initial Document
 
-Copy the template from `{templateFile}` to `{campaign_assets}/ad-batch-{date}-{project_name}.md`
+Copy the template from `{templateFile}` to `{outputFile}`
 
 Replace `{{date}}` with current date and `{{project_name}}` with the actual project name.
 
