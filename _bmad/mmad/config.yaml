@@ -1,0 +1,25 @@
+# MMAD Module Configuration
+# Temporary config for testing (pre-installation)
+# Will be replaced by bmad install mmad
+
+# Inherited from core config
+user_name: Babi
+communication_language: English
+document_output_language: Brazilian Portuguese
+output_folder: "{project-root}/_bmad-output"
+
+# MMAD-specific config
+project_name: "Time de Marketing AI"
+project_type: infoproduto
+platforms:
+  - instagram
+  - youtube
+  - tiktok
+
+mmad_output: "{project-root}/_bmad-output/mmad"
+brand_assets: "{project-root}/_bmad-output/mmad/brand"
+campaign_assets: "{project-root}/_bmad-output/mmad/campaigns"
+content_assets: "{project-root}/_bmad-output/mmad/content"
+funnel_assets: "{project-root}/_bmad-output/mmad/funnels"
+analytics_assets: "{project-root}/_bmad-output/mmad/analytics"
+vps_deploy_enabled: false
