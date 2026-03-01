@@ -134,20 +134,20 @@ mmad/
 │   ├── web-architect/
 │   ├── content-strategist/
 │   ├── copywriter/
-│   ├── art-director/
+│   ├── ~~art-director/~~ (absorbed into brand-designer)
 │   ├── video-producer/
 │   ├── ~~email-copywriter/~~ (absorbed into copywriter)
 │   ├── youtube-specialist/
 │   ├── instagram-specialist/
 │   ├── tiktok-specialist/
 │   ├── ads-strategist/
-│   ├── social-media-manager/
+│   ├── ~~social-media-manager/~~ (absorbed into content-strategist)
 │   ├── ~~growth-hacker/~~ (absorbed into ads-strategist → Acquisition Strategist)
-│   ├── lead-activation-specialist/
+│   ├── ~~lead-activation-specialist/~~ (absorbed into funnel-architect)
 │   ├── performance-analyst/
-│   ├── cro-specialist/
-│   ├── creative-reviewer/
-│   └── automation-architect/
+│   ├── ~~cro-specialist/~~ (absorbed into performance-analyst)
+│   ├── ~~creative-reviewer/~~ (absorbed into brand-designer)
+│   └── ~~automation-architect/~~ (absorbed into web-architect)
 ├── workflows/
 │   ├── brand-brief/
 │   ├── mandala-builder/

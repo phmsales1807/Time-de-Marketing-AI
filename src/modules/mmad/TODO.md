@@ -38,9 +38,7 @@ Development roadmap for mmad module.
 - [ ] Copywriter (Textos persuasivos)
   - Use: `bmad:bmb:agents:agent-builder`
   - Spec: `agents/copywriter/copywriter.spec.md`
-- [ ] Art Director (Criativos visuais)
-  - Use: `bmad:bmb:agents:agent-builder`
-  - Spec: `agents/art-director/art-director.spec.md`
+- [x] ~~Art Director~~ → Absorbed into Brand Designer (Laura)
 - [ ] Video Producer (Conteúdo audiovisual)
   - Use: `bmad:bmb:agents:agent-builder`
   - Spec: `agents/video-producer/video-producer.spec.md`
@@ -61,31 +59,18 @@ Development roadmap for mmad module.
 - [ ] Acquisition Strategist (Campanhas pagas + Growth)
   - Use: `bmad:bmb:agents:agent-builder`
   - Spec: `agents/ads-strategist/ads-strategist.spec.md`
-- [ ] Social Media Manager (Presença orgânica)
-  - Use: `bmad:bmb:agents:agent-builder`
-  - Spec: `agents/social-media-manager/social-media-manager.spec.md`
+- [x] ~~Social Media Manager~~ → Absorbed into Content Strategist (Ana)
 - [x] ~~Growth Hacker~~ → Absorbed into Acquisition Strategist (Tiago)
-- [ ] Lead Activation Specialist (Ativação de leads)
-  - Use: `bmad:bmb:agents:agent-builder`
-  - Spec: `agents/lead-activation-specialist/lead-activation-specialist.spec.md`
+- [x] ~~Lead Activation Specialist~~ → Absorbed into Funnel Architect (Davi)
 
 ### Layer 6 — Analysis
 - [ ] Performance Analyst (Dados e insights)
   - Use: `bmad:bmb:agents:agent-builder`
   - Spec: `agents/performance-analyst/performance-analyst.spec.md`
   - Note: Has sidecar for persistent memory
-- [ ] CRO Specialist (Otimização de conversão)
-  - Use: `bmad:bmb:agents:agent-builder`
-  - Spec: `agents/cro-specialist/cro-specialist.spec.md`
-- [ ] Creative Reviewer (QA de marca)
-  - Use: `bmad:bmb:agents:agent-builder`
-  - Spec: `agents/creative-reviewer/creative-reviewer.spec.md`
-
-### Layer 7 — Automation
-- [ ] Automation Architect (DevOps do marketing)
-  - Use: `bmad:bmb:agents:agent-builder`
-  - Spec: `agents/automation-architect/automation-architect.spec.md`
-  - Note: Has sidecar for persistent memory
+- [x] ~~CRO Specialist~~ → Absorbed into Performance Analyst (Gabi)
+- [x] ~~Creative Reviewer~~ → Absorbed into Brand Designer (Laura)
+- [x] ~~Automation Architect~~ → Absorbed into Web Architect (João)
 
 ---
 
