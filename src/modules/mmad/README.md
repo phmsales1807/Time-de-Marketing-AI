@@ -136,13 +136,13 @@ mmad/
 │   ├── copywriter/
 │   ├── art-director/
 │   ├── video-producer/
-│   ├── email-copywriter/
+│   ├── ~~email-copywriter/~~ (absorbed into copywriter)
 │   ├── youtube-specialist/
 │   ├── instagram-specialist/
 │   ├── tiktok-specialist/
 │   ├── ads-strategist/
 │   ├── social-media-manager/
-│   ├── growth-hacker/
+│   ├── ~~growth-hacker/~~ (absorbed into ads-strategist → Acquisition Strategist)
 │   ├── lead-activation-specialist/
 │   ├── performance-analyst/
 │   ├── cro-specialist/

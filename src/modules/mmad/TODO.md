@@ -44,9 +44,7 @@ Development roadmap for mmad module.
 - [ ] Video Producer (Conteúdo audiovisual)
   - Use: `bmad:bmb:agents:agent-builder`
   - Spec: `agents/video-producer/video-producer.spec.md`
-- [ ] Email Copywriter (Sequências de email)
-  - Use: `bmad:bmb:agents:agent-builder`
-  - Spec: `agents/email-copywriter/email-copywriter.spec.md`
+- [x] ~~Email Copywriter~~ → Absorbed into Copywriter (Nanda)
 
 ### Layer 4.5 — Platforms
 - [ ] YouTube Specialist (Ecossistema YouTube)
@@ -60,15 +58,13 @@ Development roadmap for mmad module.
   - Spec: `agents/tiktok-specialist/tiktok-specialist.spec.md`
 
 ### Layer 5 — Distribution
-- [ ] Ads Strategist (Campanhas pagas)
+- [ ] Acquisition Strategist (Campanhas pagas + Growth)
   - Use: `bmad:bmb:agents:agent-builder`
   - Spec: `agents/ads-strategist/ads-strategist.spec.md`
 - [ ] Social Media Manager (Presença orgânica)
   - Use: `bmad:bmb:agents:agent-builder`
   - Spec: `agents/social-media-manager/social-media-manager.spec.md`
-- [ ] Growth Hacker (Aquisição e crescimento)
-  - Use: `bmad:bmb:agents:agent-builder`
-  - Spec: `agents/growth-hacker/growth-hacker.spec.md`
+- [x] ~~Growth Hacker~~ → Absorbed into Acquisition Strategist (Tiago)
 - [ ] Lead Activation Specialist (Ativação de leads)
   - Use: `bmad:bmb:agents:agent-builder`
   - Spec: `agents/lead-activation-specialist/lead-activation-specialist.spec.md`
